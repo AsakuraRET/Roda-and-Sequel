@@ -5,6 +5,7 @@ require 'tilt'
 class App < Roda
   plugin :render, escape: true
   plugin :hash_routes
+  plugin :controller
 
   Unreloader.require('routes') {}
 
